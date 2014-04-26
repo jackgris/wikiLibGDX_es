@@ -1,2 +1,3 @@
 - 1.[Introducción](01.0.md)
     - 1.1. [Objetivos y características](01.1.md)
+    - 1.2. [Soporte y comunidad](01.2.md)
