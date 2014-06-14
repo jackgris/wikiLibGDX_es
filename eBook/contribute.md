@@ -80,13 +80,37 @@ Cuando querramos traer las actualizaciones de upstream, deberemos ejecutar:
 
 ***
 
+## Forma recomendada de trabajo
+
+Estas van a ser una serie de pasos recomendados a seguir, para que no se superpongan con el trabajo las presonas que deseen contribuir con el proyecto.
+
+1. Dirigirse a al repositorio upstream (https://github.com/Jackgris/wikiLibGDX_es/) y hacer clic en la parte superior derecha donde dice **"Issues"**.
+2. Hacer clic en **"New Issue"**, y como mínimo escribir en el título sobre que archivo se va a trabajar o crear, y si es posible alguna descripción (por ej: se va a corregir la ortografía, se va a añadir una sección, etc)  
+3. Actualizar tu repositorio local y comenzá a trabajar.
+4. Envia el aporte por medio de un **pull request**, en lo posible en el commit usar la recomendación descripta anteriormente sobre añadir en el texto del commit sobre el fixes y el númeto de issue.
+
+Para realizar esta serie de paso lo más recomendable es que se trabaje unicamente sobre el archivo que se indico en el **issue** que ha abierto.
+Tenga en cuenta de no subir ningun archivo temporal que puede llegar a crear su editor de texto (esto lo puede hacer sencillamente usando el comando `git status`, antes de por ejemplo realizar un `git add .`, de esta manera podrá remover  antes el archivo temporal de su repositorio local)
+
+Si realiza esta serie de pasos, seguramente podremos trabajar de una forma mucho mas cómoda y productiva.
+
+***
+
 ## Crear un nuevo archivo
 
+Para crear un nuevo archivo tiene que tener en cuenta las siguiente convenciones:
 
+- El mismo deberá tener la extensión .md
+- Si el archivo va a tratar sobre una sección que no se encuentra en el indice, recuerde agregarlo en el archivo preface.md que se encuentra en la carpeta eBook del respositorio.
+- Si el mismo trata sobre una de las secciones del indice, el nombre del archivo deberá seguir la siguiente convención, por ejemplo para tratar sobre la sección **1.3** el archivo deberiá llamarse `01.3.md`, para la sección **4.7** este deberá llamarse `04.7.md`. Para capítulos superiores al **9** no se tiene que tener en cuenta el **0** del inicio, por ejemplo para la sección **14.2** el archivo debería ser `14.2.md`.
+Cuando se trata de la primera sección de un capítulo, esta deberá ser la número **0**, por ejemplo para el comienzo del capítulo **4** el archivo deberiá ser `04.0.md` y para el **16** el archivo debería ser `16.0.md`.
+- Para escribir en el mismo tenga en cuanta la sintaxis que debe seguir para por ejemplo añadir porciones de código, que se explica en la siguiente sección.
+
+***
 
 ## Sintaxis 
 
-
+PROXIMAMENTE
 
 
 ## Enlaces
