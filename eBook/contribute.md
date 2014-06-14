@@ -84,10 +84,10 @@ Cuando querramos traer las actualizaciones de upstream, deberemos ejecutar:
 
 Estas van a ser una serie de pasos recomendados a seguir, para que no se superpongan con el trabajo las presonas que deseen contribuir con el proyecto.
 
-1. Dirigirse a al repositorio upstream (https://github.com/Jackgris/wikiLibGDX_es/) y hacer clic en la parte superior derecha donde dice **"Issues"**.
-2. Hacer clic en **"New Issue"**, y como mínimo escribir en el título sobre que archivo se va a trabajar o crear, y si es posible alguna descripción (por ej: se va a corregir la ortografía, se va a añadir una sección, etc)  
-3. Actualizar tu repositorio local y comenzá a trabajar.
-4. Envia el aporte por medio de un **pull request**, en lo posible en el commit usar la recomendación descripta anteriormente sobre añadir en el texto del commit sobre el fixes y el númeto de issue.
+- 1. Dirigirse a al repositorio upstream (https://github.com/Jackgris/wikiLibGDX_es/) y hacer clic en la parte superior derecha donde dice **"Issues"**.
+- 2. Hacer clic en **"New Issue"**, y como mínimo escribir en el título sobre que archivo se va a trabajar o crear, y si es posible alguna descripción (por ej: se va a corregir la ortografía, se va a añadir una sección, etc)  
+- 3. Actualizar tu repositorio local y comenzá a trabajar.
+- 4. Envia el aporte por medio de un **pull request**, en lo posible en el commit usar la recomendación descripta anteriormente sobre añadir en el texto del commit sobre el fixes y el númeto de issue.
 
 Para realizar esta serie de paso lo más recomendable es que se trabaje unicamente sobre el archivo que se indico en el **issue** que ha abierto.
 Tenga en cuenta de no subir ningun archivo temporal que puede llegar a crear su editor de texto (esto lo puede hacer sencillamente usando el comando `git status`, antes de por ejemplo realizar un `git add .`, de esta manera podrá remover  antes el archivo temporal de su repositorio local)
@@ -110,8 +110,87 @@ Cuando se trata de la primera sección de un capítulo, esta deberá ser la núm
 
 ## Sintaxis 
 
-PROXIMAMENTE
+**Separar secciónes:**
+Para poder realizar una separación entre secciones se deben usar solo tres * así  `***` al principio de la línea.
 
+**Texto en negrita:**
+Para hacer que un texto se vea en negrita se deben usar `**` antes y despues del texto, por ejemplo `**texto en negrita**` lo que se vería así: **texto en negrita**.
+
+**Añadir código:**
+
+Bueno para esto tenemos diferentes opciones:
+
+- 1. Separar el texto del comienzo de la línea con un `TAB`.
+- 2. Utilizar una comilla de este tipo **`** al comienzo del texto y otra al final en una misma línea. 
+- 3. Utilizar tres comillas de este tipo **`** al comienzo y al final de una porción de texto.
+- 4. En los casos anteriores se muestra el texto como código pero el mismo no se colorea ya que no le espesíficamos el tipo de código para que sepa en que forma colorearlo, por ejemplo si nosotro queremos ver algo así:
+
+```java
+private String hola = "hola";
+```
+
+Debemos hacer lo siguiente:
+
+    ```java
+    private String hola = "hola";
+    ```
+Como se puede ver, solo debemos añadir que tipo de código vamos a encerrar (en este caso java) despues de las primeras tres comillas.
+
+**Titulos:**
+
+Para añadir un titulo, va a depender el tipo de titulo que deseamos añadir a nuestro texto la cantidad de signos `#` con los que debemos iniciar la línea de texto, vamos a ver algunos ejemplos:
+
+# Ejemplo 1
+
+Eso es `# Ejemplo 1`
+
+## Ejemplo 2
+
+Eso es `## Ejemplo 2`
+
+### Ejemplo 3
+
+Eso es `### Ejemplo 3`
+
+**Indices:**
+
+Para armar algunos indices, como el indice principal que vemos en esta traducción y como voy a mostrar aquí:
+
+- 1. Primer orden
+- 2. Primer orden
+    - 2.1. Segundo orden
+- 3. Primer orden
+    - 3.1. Segundo orden
+        - 3.1.1. Tercer orden
+
+Debería usar un código como el siguiente:
+
+```
+- 1. Primer orden
+- 2. Primer orden
+    - 2.1. Segundo orden
+- 3. Primer orden
+    - 3.1. Segundo orden
+        - 3.1.1. Tercer orden
+```
+
+**Añadir imágenes y enlaces:**
+
+Para poder agregar una imagen en el texto, primero vamos a ver el ejemplo de la imagen que se encuentra en la presentación de esta traducción, este es el código que se utiliza:
+
+    ![LibGDX](./eBook/images/introduccion/libgdx.png)
+
+Como se puede ver, la idea es la siguiente, comenzamos la línea con `!` y entre `[]` colocamos una descripción de la imagen, para luego colocar el `PATH` o ruta a la imagen, en este caso la imagen esta guardada en la carpeta `introduccion`, que esta dentro de `images`, y que por último esta esta dentro de la carpeta `eBook` de este proyecto.
+
+Para poder añadir un enlace, debe encerrar entre `[]` el texto a mostrar y entre `()` el enlace donde desea apuntar, por ejemplo [Google](https://www.google.com.ar) esto es `[Google](https://www.google.com.ar)`
+
+Ahora si deseamos añadir una imagen que nos dirija a un enlace, debemos hacer una especie de combinación de lo anteriormente explicado, este es un ejemplo que se encuentra en el archivo `01.0.md`:
+
+    [![LWJGL](./images/introduccion/libjgl.png)](http://www.lwjgl.org/)
+
+Como se puede ver, la idea es armar un texto con enlace, solo que donde va el texto a mostrar, debemos colocar la imágen a mostrar. En otras palabras esta es la idea:
+
+    [![Descripción de la imagen](PATH o ruta a la imagen)](enlace donde deseamos que nos dirija)
 
 ## Enlaces
 
