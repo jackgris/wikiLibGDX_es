@@ -5,7 +5,7 @@
 
 Esta va a ser una traducción al español de la wiki de [LibGDX](https://github.com/libgdx/libgdx/wiki)
 
-Con esta traducción se pretender ayudar a la comunidad hispanohablante a poder desarrollar Vídeo Juegos con esta gran herramienta libre.
+Con esta traducción se pretende ayudar a la comunidad hispanohablante a poder desarrollar Vídeo Juegos con esta gran herramienta libre.
 
 Esta traducción se encuentra bajo la licencia [GPLv2](./LICENSE)
 
